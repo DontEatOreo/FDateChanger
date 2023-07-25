@@ -9,6 +9,7 @@ import org.fdatechanger.filedatechanger.WindowsFileDateChanger;
 public class FileDateChangerFactory implements IFileDateChangerFactory {
     @Override
     public FileDateChanger createForOS(String osName) {
+        osName = osName.toLowerCase();
         if (osName.contains("win")) return new WindowsFileDateChanger();
         else if (osName.contains("mac")) return new MacFileDateChanger();
         else if (osName.contains("linux")) return new LinuxFileDateChanger();
