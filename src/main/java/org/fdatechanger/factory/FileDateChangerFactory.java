@@ -1,6 +1,6 @@
 package org.fdatechanger.factory;
 
-import exceptions.UnsupportedOSException;
+import org.exceptions.UnsupportedOSException;
 import org.fdatechanger.filedatechanger.FileDateChanger;
 import org.fdatechanger.filedatechanger.LinuxFileDateChanger;
 import org.fdatechanger.filedatechanger.MacFileDateChanger;
